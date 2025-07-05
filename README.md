@@ -1,12 +1,41 @@
-# React + Vite
+# 🧪 React UI POC – Grid, Tile, and Detail Views
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based (POC) frontend application demonstrating flexible UI views such as **grid**, **tile**, and **detail** views, along with navigation, action buttons, and responsive menu systems.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ✅ **Hamburger Menu** (with one-level submenus)
+- ✅ **Horizontal Menu Bar** (basic navigation)
+- ✅ **Grid View**: Beautifully styled 10-column layout (e.g. Employee data)
+- ✅ **Tile View**: Compact display of records with essential fields
+- ✅ **Action Buttons** on each tile: Edit, Flag, Delete
+- ✅ **Detail View**: Full record display in a styled format
+- ✅ **View Navigation**: Easily switch between grid/tile/detail
+- ✅ **Uses a Public API** (e.g., JSONPlaceholder or Reqres for demo data)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Screenshots
+
+
+### 📊 Grid View
+![pocapp_list](https://github.com/user-attachments/assets/c68ee543-7422-4141-90a0-26379d3fc8c9)
+
+
+### 🧱 Tile View
+![pocapp1](https://github.com/user-attachments/assets/91881b36-f0b6-4a22-8892-d80ab32c9866)
+
+### 🔍 Mobile Menu
+![pocmobilemenu](https://github.com/user-attachments/assets/bc88558b-b7a2-4ea1-823e-811d689729e8)
+
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Install dependencies
+```bash
+npm install
+npm run dev
