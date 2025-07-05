@@ -50,12 +50,10 @@ export default function App() {
       <Navbar menuItems={menuItems} />
 
       <div className="content-wrapper">
-        {view !== "detail" && (
-          <div className="content-header">
-            <h2 className="content-heading">User Management</h2>
-            <ViewToggle view={view} setView={setView} />
-          </div>
-        )}
+        <div className="content-header">
+          <h2 className="content-heading">User Management</h2>
+          <ViewToggle view={view} setView={setView} />
+        </div>
 
         <div className="content-container">
           {view === "grid" && (

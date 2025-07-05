@@ -22,9 +22,9 @@
 }
 
 .content-wrapper {
+  width: 100%;
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 1rem auto;
 }
 
 .content-header {
@@ -48,5 +48,4 @@
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  min-width: 1140px;;
 }
