@@ -1,0 +1,52 @@
+
+
+:root {
+  --primary-bg: #4b3832;
+  --hover-bg: #6f4e37;
+  --highlight-color: #d5c4a1;
+  --text-color: #ffffff;
+  --white-bg: #ffffff;
+  --separator-color: #eae0d5;
+  --danger-color: #a93226;
+  --danger-hover: #922b21;
+  --warning-color: #e67e22;
+  --warning-hover: #cf711c;
+  --light-color: #f1f1f1;
+  --light-highlight: #f1e8dc;
+}
+
+.app-container {
+  background-color: var(--light-highlight);
+  min-height: 100vh;
+  color: var(--primary-bg);
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--separator-color);
+  padding-bottom: 0.5rem;
+}
+
+.content-heading {
+  font-size: 1.5rem;
+  color: var(--primary-bg);
+  font-weight: 600;
+}
+
+/* Optional: Centering and spacing inside content container */
+.content-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-width: 1140px;;
+}

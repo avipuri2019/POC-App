@@ -1,0 +1,35 @@
+
+
+.detail-view h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.detail-view p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.detail-view p strong {
+  color: #111;
+  width: 100px;
+  display: inline-block;
+}
+
+.detail-view .view-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--primary-bg);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
