@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, Suspense, use } from "react";
 import GridView from "./Components/Grid/GridView";
 import DetailView from "./Components/Detail/DetailView";
 import "./App.css";
@@ -6,11 +6,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import ViewToggle from "./Components/ViewToggle/ViewToggle";
 import ListView from "./Components/List/ListView";
 
-const fetchUsers = async () => {
-  const res = await fetch("https://dummyjson.com/users");
-  const data = await res.json();
-  return data.users;
-};
+const usersPromise = fetch("https://dummyjson.com/users")
+  .then((res) => res.json())
+  .then((data) => data.users);
 
 export default function App() {
   const menuItems = [
@@ -37,13 +35,14 @@ export default function App() {
     { label: "Contact Us" },
   ];
 
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
   const [view, setView] = useState("grid");
   const [selectedUser, setSelectedUser] = useState(null);
+  const users = use(usersPromise); // 🔄 Replaces useEffect + useState
 
-  useEffect(() => {
-    fetchUsers().then(setUsers);
-  }, []);
+  // useEffect(() => {
+  //   fetchUsers().then(setUsers);
+  // }, []);
 
   return (
     <div className="app-container">
